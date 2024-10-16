@@ -1,0 +1,61 @@
+ .flex{
+    font-size: 20px;
+   width: 60%;
+   height:fit-content;
+   border: 10px solid rgb(192, 4, 35);
+   margin-left: 2%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-items: center;
+
+} 
+
+.box {
+width: 30%;
+padding: 2%;
+border: 15px;
+border-style: groove;
+border-color: blue;
+margin-left: 6px;
+margin: 10%;
+font-size: 20px;
+font-family: cursive;
+font-variant: small-caps;
+
+}
+
+.box1 {
+    width: 30%;
+    height: 40%;
+    padding: 2%;
+    margin: 10%;
+    border: 15px  rgb(18, 85, 18);
+    border-style: inset;
+    background-color: rgb(224, 154, 103);
+    text-align:justify;
+    text-indent: 100px;
+    overflow: hidden;
+    
+    }
+    
+    .deco{
+        width: 90%;
+        text-align:center;
+        font-size: 60px;
+        color: rgb(240, 6, 6);
+        padding: 2%;
+       margin: 2%;
+       border: 5px solid rgb(141, 141, 12);
+       box-sizing: border-box;  
+        
+       text-decoration:underline; 
+       text-shadow: 2px 2px 15px rgb(243, 89, 89),3px 3px 10px rgb(38, 38, 207);
+    }
+    p{
+        text-align: center;
+        width: 90%;
+        padding: 0%;
+       text-shadow: 3px 3px 5px red, 3px 3px 8px purple;
+        font-size: 30px;
+
+    }
