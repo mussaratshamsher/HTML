@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+   
+        .img{
+            background:pink url(https://images.freeimages.com/images/large-previews/cd6/dynamic-abstract-sunset-art-0410-5697073.jpg?fmt=webp&w=500);
+       background-repeat: no-repeat;
+       background-position:unset;
+       background-size: cover;
+       background-attachment: scroll;
+        }
+        .img::after{
+      background-color: white;
+      opacity: 40px;
+        } 
+        .box{
+            width: 150px;
+            height: 150px;
+            background: white;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .box:hover{
+            width: 300px;
+            height: 300px;
+           color: white;
+           font-size:xx-large;
+            background-image: url(https://images.freeimages.com/images/large-previews/304/sunset-1228552.jpg?fmt=webp&w=500);
+        }
+        .trans{
+            width: 350px;
+            height: 350px;
+            background: silver;
+            margin: 5px;
+            justify-items: center;
+            transform: rotate(60deg);
+        }
+        .trans1{
+            width: 350px;
+            height: 350px;
+            background: silver;
+            margin: 5px;
+            transform: skewX(20deg);
+        }
+        .trans2{
+            width: 350px;
+            height: 350px;
+            background: silver;
+            margin: 5px;
+            transform: skewY(5deg);
+        }
+        .trans3{
+            width: 350px;
+            height: 350px;
+            background: silver;
+            margin: 5px;
+            transform: skew(10deg, 15deg);
+        }
+    </style>
+</head>
+
+<body class="img" >
+    <div class="col-box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deleniti veritatis maiores corrupti suscipit unde exercitationem, in reprehenderit nobis accusamus commodi quae aspernatur vel? Quas consequatur dignissimos corrupti architecto accusantium?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deleniti veritatis maiores corrupti suscipit unde exercitationem, in reprehenderit nobis accusamus commodi quae aspernatur vel? Quas consequatur dignissimos corrupti architecto accusantium?
+
+    
+    </div>
+
+<h1 class="box">Lorem ipsum dolor sit </h1>
+
+    <div class="trans">
+<h1> Lorem ipsum dolor</h1>
+<br>
+<h2>amet consectetur adipisicing elit</h2>
+
+    </div>
+    <div class="trans1">
+        <h1> Lorem ipsum dolor</h1>
+        <br>
+        <h2>amet consectetur adipisicing elit</h2>
+            </div>
+            <div class="trans2">
+                <h1> Lorem ipsum dolor</h1>
+                <br>
+                <h2>amet consectetur adipisicing elit</h2>
+                    </div>
+                    <div class="trans3">
+                        <h1> Lorem ipsum dolor</h1>
+                        <br>
+                        <h2>amet consectetur adipisicing elit</h2>
+                            </div>
+</body>
+</html>

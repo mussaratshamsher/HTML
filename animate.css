@@ -1,0 +1,28 @@
+.card{
+    margin: 0 auto;
+    padding: 2em;
+    width: 300px;
+    color: white;
+    background: rgb(8, 8, 8);
+    text-align: justify;
+    hyphens:none; 
+    border-radius: 10px;
+    position: relative;
+}
+
+.card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100;
+     
+    background-image: conic-gradient(from 0deg, transparent 70%, blue); 
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding:5px;
+    border-radius: 10px;
+
+
+}
