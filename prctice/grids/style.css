@@ -1,0 +1,198 @@
+body{
+    font-weight:bold;
+    font-size: x-large;
+}
+
+
+.container{
+    background-color:  rgb(201, 186, 224);
+    width: 500px;
+    height: 400px;
+   margin:45px auto 0;
+   border: 5px solid rgb(210, 194, 235);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns:repeat(3, 1fr);
+    gap: 5px;
+}
+
+.items1{
+    background-color: orangered;
+   grid-column: 1 / 4;
+}
+.items2{
+    background-color:  yellowgreen ;
+    grid-row: 2 / 5;
+}
+.items3{
+    background-color: tomato ;
+    grid-column: 2 /4
+}
+.items4{
+    background-color:rgb(122, 122, 216);
+    height: 100px;
+}
+.items5{
+    background-color: orange;
+    height: 100px;
+}
+.items6{
+    background-color: purple;
+    grid-column: 2 / 4;
+    height: 100px;
+}
+
+
+.container_2{
+    background-color: rgb(127, 209, 209);
+    width: 500px;
+    height: 150px;
+   margin: 45px auto 0;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns:repeat(3, auto);
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.items7{
+    background-color: orangered;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.items8{
+    background-color:  yellowgreen ;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.items9{
+    background-color: tomato ;
+    grid-row: 1 / 2;
+    grid-column: 2 /3;
+
+}
+.items10{
+    background-color:rgb(122, 122, 216);
+
+}
+.items11{
+    background-color: orange;
+    grid-row: 2 / 3;
+    grid-column: 2 /3;
+
+}
+.items12{
+    background-color: purple;
+}
+
+.container3{
+    background: rgb(37, 34, 34);
+    border: 15px solid #2e313a;
+    height: 700px;
+    width: 600px;
+    margin: 45px auto 0;
+    color: white;
+    place-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 15px;
+}
+
+.header{
+    background :  linear-gradient( rgb(57, 57, 235), rgb(29, 247, 210));
+    grid-column: 1 /4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+}
+.sidebar{
+    background: linear-gradient(rgb(18, 170, 157) ,white, rgb(18, 170, 157) ,white) ;
+    grid-row: 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+}
+.box_1{
+background: repeating-radial-gradient(rgb(126, 126, 236), rgb(19, 250, 231),rgb(126, 126, 236), rgb(19, 250, 231));
+grid-column:  2 / 4;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+}
+.box_2{
+    background: radial-gradient(rgb(126, 126, 236), rgb(19, 250, 231));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    }
+.box_3{
+        background: linear-gradient( rgb(126, 126, 236), rgb(19, 250, 231)) ; 
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+        }
+.footer{
+            background: rgb(103, 103, 241);
+           grid-column-start: 1;
+           grid-column-end: 4;
+           border: 5px solid black;
+           
+        }
+
+        .container4{
+            background: black;
+            border: 5px solid black;
+            height: 600px;
+            width: 700px;
+            margin: 45px auto 0;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 80px 100px 200px 100px 80px;
+            grid-gap: 10px;
+            grid-template-areas: "header2 header2 header2 header2 header2 "
+                                 "nav article article article ads"
+                                 "nav article article article ads"
+                                 "nav article article article ads"
+                                 "nav footer2  footer2 footer2 footer2"
+        }
+        .header2{background: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            grid-area: header2;
+        }
+        .nav{background: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            grid-area: nav;
+        }
+        .article{background: yellow;
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: article;
+
+        }
+        .ads{background: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: ads;
+        }
+        .footer2{background: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: footer2;
+        }
